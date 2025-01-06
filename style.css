@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f4ff, #dce8ff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and Button Styling */
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #003366;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #e6f0ff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0055a4;
+}
+
+/* Footer Background */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url('https://cdn.pixabay.com/photo/2016/04/01/10/56/tax-1307236_960_720.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #003366;
+    color: #fff;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Logos Container */
+.footer-logos {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    gap: 10px; /* Jarak antar logo */
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+    width: 43px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

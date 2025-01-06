@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Core Tax to XML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</head>
+<body>
+    <h1>Convert Core Tax to XML</h1>
+    <input type="file" id="excelFileInput" />
+    <button onclick="handleFile()">Convert</button>
+    
+    <script>
+        // Define the handleFile function here
+        function handleFile() {
+            const fileInput = document.getElementById('excelFileInput');
+            const file = fileInput.files[0];
+            if (file) {
+                excelToXml(file);
+            } else {
+                alert('Please select a file first!');
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 Money Circle  | Faktur Pajak Keluaran converter</p>
+        <div class="footer-logos">
+            <img src="https://github.com/Heavenlyblush/E-Bupot_Heavenlyblush/blob/main/img/logo/hbw.png?raw=true" alt="HB Logo" class="footer-logo">
+            <img src="https://static.wixstatic.com/media/08c0b2_b954a0c753174530b55152873aa44a88~mv2.webp/v1/fill/w_483,h_362,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/08c0b2_b954a0c753174530b55152873aa44a88~mv2.webp" alt="Tax Logo" class="footer-logo">
+        </div>
+    </footer>
+</body>
+</html>
